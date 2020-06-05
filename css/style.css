@@ -1,0 +1,284 @@
+body{
+     background: rgba(0,0,0, 0.9); 
+     margin: 0;
+     color: black; 
+     background-color: white; 
+     
+     
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 700%;
+    text-align:center;
+    
+    -webkit-text-stroke: 2px black;
+    color: white; 
+    
+    
+
+}
+
+
+
+
+
+
+.headerim::after{
+    content: '';
+    height: 100vh; 
+    width: 100%;
+    background-image: url(../imagen/imfondo.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    display: block; 
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+}
+
+.header-content {
+    position: absolute;
+    z-index: 1;
+    top: -23%; 
+    left:50%; 
+    margin-top: 150px;
+    margin-left: -200px;
+    text-align: center;
+    transition: all 1000ms; 
+}
+
+.headerim:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+
+.headerim:hover .title {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.circulo{
+    border-radius: 50%;
+    border: 5px dashed black; 
+
+}
+.title2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 500%;
+    text-align: center;
+    line-height: 1.7;
+    color:white;
+    text-shadow: 0 0 20px #804000;
+    -webkit-text-stroke: 2px black;
+
+
+     
+}
+
+.title2:after{
+    content: attr(data-text);
+    position: absolute;
+     top:0; 
+     left:0; 
+     padding: 0 20px;
+     z-index: -1;
+     color: #804000;
+     filter: blur(15px); 
+}
+
+.container {
+    max-width: 960px;
+    margin: auto; 
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+
+.text-center{
+    text-align: center;
+    margin: auto;
+
+}
+
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px; 
+
+}
+
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+
+
+}
+
+
+.contenedor{
+  margin: auto; 
+
+  background-color: white;
+
+  width: 800px; 
+  padding: 30px;
+
+
+}
+
+ul, li {
+  margin: 0; 
+  padding:0; 
+  list-style: none;
+}
+
+ul.slider {
+  position: relative; 
+  width: 800px; 
+  padding:200px; 
+
+}
+ul.slider li{
+  position: absolute; 
+  left:0px; 
+  top: 0px; 
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  background: #fff; 
+  transition: opacity .5s;
+
+
+}
+
+ul.slider li img{
+  width: 100%; 
+  height: 300px;
+  object-fit: cover;
+}
+ ul.slider li:first-child {
+   opacity:1; 
+ }
+
+ ul.slider li:target{
+   opacity:1; 
+ }
+
+ .menu{
+   text-align: center;
+   margin: 20px; 
+ }
+
+ .menu li{
+   display: inline-block;
+   text-align: center;
+ }
+
+ .menu li a{
+   display: inline-block; 
+   color: white; 
+   text-decoration: none;
+   background-color: gray;
+   padding: 10px;
+   width: 20px;
+   height: 20px;
+   font-size: 20px;
+   border-radius: 100%;
+ }
+
+
+
+
+.bg-light 
+{
+background: #F7C897; 
+}
+
+@media (max-width: 560px) {
+    .headerim::after {
+      height: 50vh;
+    }
+    
+    .header-content {
+      top: 5%;
+      margin-top: 5px;
+    }
+  
+    .header-content .circulo {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .header-content .text {
+      display: none;
+    }
+    
+    .grid-3, .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .services section {
+      padding: 1.4rem 1rem;
+    }
+  }
+
+
+  @media(max-height: 500px) {
+    .header-content .title3, .header-content .text {
+      display: none;
+    }
+    .header-content {
+      top: 0;
+    }
+  }
+
+  .redes{
+    border: 5px dashed black; 
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    background-color: #97F7F3;
+  }
+
+  .fb {
+    text-align: center;
+    
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+  }
+
+  h3{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+  }
+
+  .letras1{
+    font-family: 'Neucha', cursive;
+    font-size: 25px;
+  }
+  .letras2{
+    font-family: 'Neucha', cursive;
+    font-size: 25px;
+  }
+  .letras3{
+    font-family: 'Neucha', cursive;
+    font-size: 25px;
+  }
+  .alfarero{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+  }
+
+  .pagina2{
+    font-size: 30px;
+   
+  }
